@@ -1,0 +1,75 @@
+/* style.scss */
+@import './StyleHeader.scss';
+@import './fonctionnement.scss';
+@import './restaurants.scss';
+@import './footer.scss';
+@import './carte-restaurant.scss';
+@import './heart.scss';
+@import './loading.scss';
+
+$primaire : #9356DC;
+$Secondaire : #FF79DA;
+$Secondaire : #99E2D0;
+
+body {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+
+}
+.title{
+  margin-left: 1rem;
+}
+.localisation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(219, 219, 219);
+  z-index: 1;
+  p{
+   margin-left: 1rem;
+   font-weight: 700;
+  }
+} 
+.reserver {
+  background-color:rgb(230 227 237);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  h2 {
+    font-weight: 700;
+  }
+  p {
+    color: rgb(107 114 128);
+  }
+  button {
+    cursor: pointer;
+    border: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: white;
+    background: rgb(238,174,202);
+    background: linear-gradient(180deg, rgb(217 135 204) 0%, rgba(172,67,254,1) 100%);
+    border-radius: 9999px;
+    font-weight: 700;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+   
+    p {
+      color: rgb(255, 255, 255);
+    }
+  }
+  button:hover{
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    background: linear-gradient(180deg, rgb(218, 138, 204) 0%, rgb(175, 81, 248) 100%);
+  }
+  }
+}

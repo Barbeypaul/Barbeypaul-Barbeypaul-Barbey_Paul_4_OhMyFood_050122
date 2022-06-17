@@ -1,0 +1,28 @@
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #d034db;
+    visibility: hidden; 
+    animation: spin 2.9s ;
+}
+.page{
+    animation: show 3s;
+}
+@keyframes show {
+    0% {  visibility: hidden; }
+    99% {  visibility: hidden; }
+    100% { visibility: visible; }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); visibility: visible; }
+    99% {transform: rotate(1000deg); visibility: visible;}
+    100% {  visibility: hidden;}
+}

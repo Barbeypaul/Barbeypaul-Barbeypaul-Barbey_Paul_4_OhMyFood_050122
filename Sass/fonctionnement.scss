@@ -1,0 +1,58 @@
+.fonct-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    .box{
+        display: flex;
+        flex-direction: column;
+    @media (min-width: 800px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .fonct-card {
+        cursor: pointer;
+        box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        display: flex;
+        align-items: center;
+        display: flex;
+        background-color: rgb(237 237 237);
+        padding: 1rem;
+        border-radius: 1.5rem; /* 24px */
+        margin-bottom: 1rem;
+        @media (min-width: 800px) {
+            width: 100%;
+            margin-bottom: 0rem;
+            margin: 0.5rem;
+        }
+        .number{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: -1.7rem;
+            height: 1.5rem;
+            width: 1.5rem;
+            font-size: small;
+            border-radius: 9999px;
+            background-color: #9356DC; ;
+            color: white;
+        }
+        i {
+            color: gray;
+            font-size: 1.2rem;
+            margin-right: 1rem ;
+        }
+        p{
+            font-weight: bold;
+        }
+    }
+    .fonct-card:hover{
+        background-color: #e3daf0;
+       
+        i{
+            color: #9356DC; ;
+        }
+    }
+    }
+}

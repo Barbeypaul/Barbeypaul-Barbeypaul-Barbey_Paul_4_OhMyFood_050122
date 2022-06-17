@@ -1,0 +1,31 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(39 39 39);
+    color: white;
+    padding: 1rem;
+    @media (min-width: 800px) {
+        text-align: center;
+        align-items: center;
+    }
+    p{
+        cursor: pointer;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    img{
+        color: white;
+        height: autos;
+        width: 100px;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .flex {
+        display: flex;
+        align-items: center;
+        i{
+            margin-right: 0.5rem;
+        }
+    }
+
+}
